@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <link rel="icon" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="css/edu.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <title>跨境电子商务年度个人额度查询 － 快邮口岸</title>
+</head>
+<body>
+    <div class="eduPage">
+        <div class="topInfo">
+            <div class="top">
+                <div class="logo"></div>
+                <div class="titBar">
+                    <ul>
+                        <li class="tb01">
+                            <a href="http://www.kytrack.com/">包裹查询</a>
+                            <b>|</b>
+                        </li>
+                        <li class="tb02">
+                            <a href="http://geren.kytrack.com/">进口个人额度查询</a>
+                            <b class="ed">|</b>
+                        </li>
+                        <li class="tb03">
+                            <a href="http://www.expecs.com/">快邮在线</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ctn">
+            <div class="ctnInfo">
+                <div class="lgBox">
+                    <h3 class="hy">年度个人额度查询</h3>
+                    <div class="ipt">
+                        <div class="name">
+                            <i></i>
+                            <input class="user" type="text" placeholder="请输入姓名" maxlength="18"/>
+                            <span class="zf">至少输入两个字符</span>
+                        </div>
+                        <div class="idCard">
+                            <i class="ic"></i>
+                            <input class="sfz" type="text" placeholder="请输入身份证号" maxlength="18"/>
+                            <span>至少15或18位标准身份证</span>
+                        </div>
+                        <div class="Reg">
+                            <div class="yzImg lf">
+                                <i class="yz"></i>
+                                <input class="yzm" type="text" placeholder="请输入验证码" maxlength="4"/>
+                                <span class="yzInfo">请输入验证码</span>
+                            </div>
+                            <div class="img lf">
+                                <img src="img/yzm.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <input class="theme-login" type="submit" value="查 询"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ft">
+            <div class="ftInfo">© 2016 深圳市快邮口岸科技有限公司 版权所有</div>
+        </div>
+    </div>
+    <div class="theme-popover">
+        <div class="theme-poptit">
+            <a href="#" class="close">×</a>
+            <h3>个人额度情况</h3>
+        </div>
+        <div class="theme-edu">
+            <p>自2017年1月1日00:00起，至2017年01月16日 24:00，您的个人额度如下：</p>
+            <div class="theme-eduBox">
+                <div class="theme-eduInfo lf">
+                    <div class="theme-eduTopLf">
+                        <i></i>
+                        <span class="yye">本年已用额度</span>
+                    </div>
+                    <div class="theme-eduBomLf bf">0</div>
+                </div>
+                <div class="theme-eduInfo lf ky">
+                    <div class="theme-eduTopLf">
+                        <i class="able"></i>
+                        <span class="kye">本年可用额度</span>
+                    </div>
+                    <div class="theme-eduBomLf bt">20000</div>
+                </div>
+            </div>
+            <h5>
+                <a href="http://www.expecs.com">@快邮口岸</a>
+                提供技术支持
+            </h5>
+        </div>
+    </div>
+    <div class="theme-popover-mask"></div>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript">
+
+        /*欢迎*/
+        $('.hy').mousemove(function(){
+            $('.hy').addClass('animated swing');
+        });
+
+        /*顶部li*/
+        $('.titBar li').addClass('animated lightSpeedIn');
+
+        /*模态框*/
+        jQuery(document).ready(function($) {
+            $('.theme-login').click(function(){
+                $('.theme-popover-mask').fadeIn(100);
+                $('.theme-popover').slideDown(200);
+            });
+            $('.theme-poptit .close').click(function(){
+                $('.theme-popover-mask').fadeOut(100);
+                $('.theme-popover').slideUp(200);
+            });
+        });
+    </script>
+</body>
+</html>

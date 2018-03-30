@@ -1,0 +1,423 @@
+/*ͨ通用样式ʽ*/
+body{font: 12px/1.5 microsoft yahei,arial,sans-serif;}
+body,table,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;  }
+li{list-style: none;}
+input{outline: none}
+img{border: 0;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+.lf{float: left}
+.rt{float: right}
+/*顶部样式*/
+.topInfo{
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid #aaa;
+}
+.top,.ftInfo,.ctnInfo{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    width: 240px;
+    height: 60px;
+    background: url("../img/edu-logo.png") no-repeat center center/cover;
+    margin: 20px auto;
+}
+.titBar{
+    float: right;
+    line-height: 100px;
+}
+.titBar li{
+    display: inline-block;
+    width: 170px;
+    text-align: center;
+}
+.titBar li a{
+    color: #333;
+    font-size: 14px;
+}
+.titBar li a:hover{
+    color: #f18200;
+}
+.titBar li b{
+    padding-left: 30px;
+}
+.titBar li b.ed{
+    padding-left: 50px;
+}
+/*中间内容*/
+.ctn{
+    overflow: hidden;
+    width: 100%;
+    height: 660px;
+    background: url("../img/bgr.jpg") no-repeat center center/cover;
+}
+.ctn .lgBox{
+    background: #fff;
+    width: 420px;
+    height: 550px;
+    float: right;
+    margin: 50px;
+    border-radius: 5px;
+}
+.ctn .lgBox h3{
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    background: #00459C;
+    font-weight: normal;
+    color: #fff;
+    margin: 50px auto 70px;
+    padding: 10px 0;
+}
+.ctn .lgBox .ipt{
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ctn .lgBox .ipt input{
+    width: 320px;
+    border: 1px solid #d2d2d2;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding-left: 30px;
+    margin-bottom: 35px;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.ctn .lgBox .ipt input:hover{
+    border: 1px solid #3278e6;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.ctn .lgBox .ipt .yzm{
+    width: 210px;
+    margin: 6px 8px 60px 35px;
+}
+.ctn .lgBox .ipt div{
+    position: relative;
+}
+.ctn .lgBox .ipt div span{
+    position: absolute;
+    top: 2px;
+    right: 35px;
+    color: #ec4e4e;
+}
+.ctn .lgBox .ipt div span.yzInfo{
+    top: 7px;
+    right: 8px;
+}
+.ctn .lgBox .ipt i{
+    position: absolute;
+    left: 38px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../img/name.png") no-repeat center center/cover;
+}
+.ctn .lgBox .ipt i.ic{
+    background: url("../img/sfz.png") no-repeat center center/cover;
+}
+.ctn .lgBox .ipt i.yz{
+    top: 6px;
+    background: url("../img/yz.png") no-repeat center center/cover;
+}
+.ctn .lgBox .ipt .Reg{
+    overflow: hidden;
+}
+.ctn .lgBox .btn{
+    text-align: center;
+}
+.ctn .lgBox .btn input{
+    cursor: pointer;
+    width: 352px;
+    background: #f18200;
+    border: 0;
+    outline: none;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 0;
+    font-size: 16px;
+}
+/*底部信息*/
+.ftInfo{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+/*模态框*/
+.theme-popover-mask {
+    z-index: 9998;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.7;
+    filter:alpha(opacity=70);
+    display:none
+}
+.theme-popover {
+    z-index:9999;
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:660px;
+    height:360px;
+    margin:-180px 0 0 -330px;
+    border-radius:5px;
+    border:solid 2px #666;
+    background-color:#fff;
+    display:none;
+    box-shadow: 0 0 10px #666;
+}
+.theme-poptit {
+    border-bottom:1px solid #ddd;
+    padding:12px;
+    position: relative;
+    font-size: 14px;
+}
+.theme-poptit .close {
+    float:right;
+    color:#999;
+    padding:5px;
+    margin:-2px -5px -5px;
+    font:bold 14px/14px simsun;
+    text-shadow:0 1px 0 #ddd
+}
+.theme-poptit .close:hover {
+    color:#444;
+}
+/*模态框内容*/
+.theme-eduBox{
+    width: 550px;
+    height: 100px;
+    border: 1px solid #000;
+    overflow: hidden;
+    margin: 10px auto 50px;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    color: #000;
+    background: #fff;
+}
+.theme-edu p{
+    font-size: 16px;
+    padding: 30px 0 20px 52px;
+    color: #333;
+}
+.theme-edu h5{
+    font-weight: normal;
+    text-align: center;
+}
+.theme-edu h5 a{
+    color: #f18200;
+}
+.theme-eduInfo{
+    width: 49%;
+    height: 100%;
+    font-size: 18px;
+    float: left;
+    font-weight: bold;
+    border-right: 1px solid #ddd;
+}
+.theme-edu .ky{
+    border-right: 0;
+}
+.theme-eduTopLf{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: normal;
+}
+.theme-eduTopLf i{
+    position: absolute;
+    top: 10px;
+    left: 56px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/used.png") no-repeat center center/cover;
+}
+.theme-eduTopLf i.able{
+    background: url("../img/able.png") no-repeat center center/cover;
+}
+.theme-eduTopLf .yye,.theme-eduInfo .bf{
+    color: #ec4e4e;
+}
+.theme-eduTopLf .kye,.theme-eduInfo .bt{
+    color: #4CB8A8;
+}
+.theme-eduBomLf{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+/*手机版*/
+@media screen and (max-width: 480px){
+    html,body{
+        height:100%;
+    }
+    .top,.ftInfo,.ctnInfo{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 180px;
+        height: 45px;
+        margin-left: 27%;
+        margin-right: 27%;
+    }
+    .titBar{
+        display: none;
+    }
+    .ctn{
+        height: 100%;
+        padding-bottom: 40px;
+        background-color: #e1e1e1;
+        background: url("../img/bgr-1.png") no-repeat center center/cover;
+    }
+    .ctn .ctnInfo{
+        overflow: hidden;
+    }
+    .ctn .lgBox{
+        border-radius: 5px;
+        margin: 60px auto 0;
+        height: 320px;
+        background: none;
+    }
+    .ctn .lgBox h3{
+        display: none;
+    }
+    .ctn .lgBox .ipt input{
+        cursor: pointer;
+        width: 250px;
+        margin-bottom: 35px;
+        border: 1px solid #aaa;
+        padding: 10px 0 10px 30px;
+        margin-left: 3rem;
+        border-radius:0;
+    }
+    .ctn .lgBox .ipt input:hover{
+        border: 1px solid #ddd;
+    }
+    .ctn .lgBox .ipt i{
+        top: 13px;
+        left: 98px;
+    }
+    .ctn .lgBox .ipt i.yz{
+        top: 18px;
+    }
+    .ctn .lgBox .ipt .yzm{
+        width: 143px;
+        margin: 6px 6px 60px 94px;
+    }
+    .ctn .lgBox .ipt div span.yzInfo{
+        top: 46px;
+        text-align: left;
+    }
+    .ctn .lgBox .ipt div span{
+        top: 42px;
+        left: 94px;
+        text-align: left;
+    }
+    .ctn .lgBox .ipt div span.zf{
+        top: 42px;
+        text-align: left;
+    }
+    .ctn .lgBox .btn input{
+        width: 280px;
+        height:39px;
+        margin-left: 48px;
+        border-radius:0;
+    }
+    .ctn .lgBox .ipt .img img{
+        margin-top: 8px;
+    }
+    .ftInfo {
+        padding: 15px 0;
+    }
+    .theme-popover{
+        width: 350px;
+        height: 320px;
+        margin-left: -178px;
+    }
+    .theme-eduBox{
+        width: 320px;
+        margin: 10px auto 20px;
+    }
+    .theme-eduTopLf i{
+        left: 3px;
+    }
+    .theme-edu p{
+        padding: 30px 0 20px 14px;
+    }
+    .theme-poptit{
+        background: #333;
+        color: #fff;
+        padding: 8px 12px;
+    }
+    .theme-poptit a{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 1366px){
+    .top, .ftInfo, .ctnInfo {
+        width: 100%;
+    }
+    .logo{
+        width: 200px;
+        height: 50px;
+    }
+    .titBar{
+        margin-right: 16px;
+    }
+    .titBar li.tb01{
+        width: 80px;
+    }
+    .titBar li.tb02{
+        width: 140px;
+    }
+    .titBar li.tb03{
+        width: 60px;
+    }
+    .titBar li b,.titBar li b.ed{
+        padding-left: 9px;
+    }
+    .ctn .lgBox .btn input{
+        height:39px;
+    }
+    .theme-popover{
+        width: 420px;
+        height: 320px;
+        margin-left: -210px;
+        margin-top: -24%;
+    }
+    .theme-eduBox{
+        width: 360px;
+        margin: 10px auto 20px;
+    }
+    .theme-eduTopLf i{
+        left: 3px;
+    }
+    .theme-edu p{
+        padding: 30px 0 20px 29px;
+    }
+    .theme-poptit{
+        background: #333;
+        color: #fff;
+        padding: 8px 12px;
+    }
+    .theme-poptit a{
+        font-size: 20px;
+    }
+}
